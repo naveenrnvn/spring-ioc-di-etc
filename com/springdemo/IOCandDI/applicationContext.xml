@@ -15,7 +15,7 @@
 
     
  	<bean id="myCoach"
- 		class="com.springdemo.IOCandDI.TrackCoach">
+ 		class="com.springdemo.IOCandDI.impl.TrackCoach">
  		<property name="name">
  		   <value>${my.intitail}</value>
  		</property>		

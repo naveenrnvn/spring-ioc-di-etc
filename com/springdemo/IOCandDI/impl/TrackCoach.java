@@ -1,4 +1,4 @@
-package com.springdemo.IOCandDI.implementations;
+package com.springdemo.IOCandDI.impl;
 
 import com.springdemo.IOCandDI.interfaces.Coach;
 

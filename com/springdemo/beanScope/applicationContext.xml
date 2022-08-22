@@ -14,11 +14,11 @@
 	<context:property-placeholder
 		location="classpath:resource/application.properties" />
 	<bean id="fortune"
-		class="com.springdemo.IOCandDI.beanScope.implementation.GoodFortuenService">
+		class="com.springdemo.beanScope.impl.GoodFortuenService">
 	</bean>
 
 	<bean id="myCoach"
-		class="com.springdemo.IOCandDI.beanScope.implementation.TrackCoach">
+		class="com.springdemo.beanScope.impl.TrackCoach">
 		<constructor-arg ref="fortune"></constructor-arg>
 	</bean>
 

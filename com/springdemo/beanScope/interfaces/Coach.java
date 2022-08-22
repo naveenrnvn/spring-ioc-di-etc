@@ -1,4 +1,4 @@
-package com.springdemo.IOCandDI.beanScope.interfaces;
+package com.springdemo.beanScope.interfaces;
 
 public interface Coach {
 	public default void activity() {

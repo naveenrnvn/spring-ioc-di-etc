@@ -12,7 +12,7 @@ public class HelloSpringApp_InversionControl {
 
 		// load the spring configuration file
 		ClassPathXmlApplicationContext context = 
-				new ClassPathXmlApplicationContext("com/springdemo/applicationContext.xml");
+				new ClassPathXmlApplicationContext("com/springdemo/IOCandDI/applicationContext.xml");
 				
 		// retrieve bean from spring container
 		Coach theCoach = context.getBean("myCoach", Coach.class);

@@ -1,9 +1,9 @@
-package com.springdemo.IOCandDI.beanScope;
+package com.springdemo.beanScope;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.springdemo.IOCandDI.beanScope.interfaces.Coach;
+import com.springdemo.beanScope.interfaces.Coach;
 
 public class SpringBeansScopePracrtice {
 	public static void main(String[] args) {
