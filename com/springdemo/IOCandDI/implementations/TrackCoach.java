@@ -1,8 +1,12 @@
-package com.springdemo;
+package com.springdemo.IOCandDI.implementations;
+
+import com.springdemo.IOCandDI.interfaces.Coach;
 
 public class TrackCoach implements Coach {
 	
-	String name;
+	String nickName;
+	
+	private String name;
 	
 	
 	public TrackCoach(String name) {

@@ -11,14 +11,15 @@
     <!-- Define your beans here -->
     
     <!-- define the dependency -->
+    <context:property-placeholder location="classpath:resource/application.properties"/>
 
     
  	<bean id="myCoach"
- 		class="com.springdemo.TrackCoach">
+ 		class="com.springdemo.IOCandDI.TrackCoach">
  		<property name="name">
- 		   <value>R</value>
+ 		   <value>${my.intitail}</value>
  		</property>		
- 		<constructor-arg value="naveen"></constructor-arg>	
+ 		<constructor-arg value="${my.name}"></constructor-arg>	
  		 
  		<!-- constructor dependency injection-->
  		
@@ -26,7 +27,7 @@
 
     <!--
     <bean id="myCoach"
-        class="com.springdemo.BaseballCoach">         
+        class="com.springdemo.IOCandDI.BaseballCoach">         
     </bean>
     -->
 

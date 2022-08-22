@@ -1,4 +1,7 @@
-package com.springdemo;
+package com.springdemo.IOCandDI;
+
+import com.springdemo.IOCandDI.implementations.TrackCoach;
+import com.springdemo.IOCandDI.interfaces.Coach;
 
 public class MyApp {
 

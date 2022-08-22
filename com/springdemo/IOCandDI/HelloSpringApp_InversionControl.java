@@ -1,6 +1,8 @@
-package com.springdemo;
+package com.springdemo.IOCandDI;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.springdemo.IOCandDI.interfaces.Coach;
 
 public class HelloSpringApp_InversionControl {
 
@@ -10,7 +12,7 @@ public class HelloSpringApp_InversionControl {
 
 		// load the spring configuration file
 		ClassPathXmlApplicationContext context = 
-				new ClassPathXmlApplicationContext("applicationContext.xml");
+				new ClassPathXmlApplicationContext("com/springdemo/applicationContext.xml");
 				
 		// retrieve bean from spring container
 		Coach theCoach = context.getBean("myCoach", Coach.class);

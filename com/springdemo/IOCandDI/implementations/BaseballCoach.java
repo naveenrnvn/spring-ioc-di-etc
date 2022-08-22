@@ -1,4 +1,6 @@
-package com.springdemo;
+package com.springdemo.IOCandDI.implementations;
+
+import com.springdemo.IOCandDI.interfaces.Coach;
 
 public class BaseballCoach implements Coach {
 	
