@@ -1,10 +1,12 @@
-package com.luv2code.springdemo;
+package com.springdemo;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class HelloSpringApp {
+public class HelloSpringApp_InversionControl {
 
 	public static void main(String[] args) {
+		
+		//inversion of control
 
 		// load the spring configuration file
 		ClassPathXmlApplicationContext context = 
