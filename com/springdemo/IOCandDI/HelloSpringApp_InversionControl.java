@@ -2,7 +2,7 @@ package com.springdemo.IOCandDI;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.springdemo.IOCandDI.interfaces.Coach;
+import com.java.interfaces.Coach;
 
 public class HelloSpringApp_InversionControl {
 
@@ -18,7 +18,7 @@ public class HelloSpringApp_InversionControl {
 		Coach theCoach = context.getBean("myCoach", Coach.class);
 		
 		// call methods on the bean
-		System.out.println(theCoach.getDailyWorkout());
+		theCoach.getDailyWorkout();
 		
 		// close the context
 		context.close();

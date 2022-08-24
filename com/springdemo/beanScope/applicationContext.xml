@@ -13,12 +13,12 @@
 	<!-- define the dependency -->
 	<context:property-placeholder
 		location="classpath:resource/application.properties" />
-	<bean id="fortune"
+	<bean id="fortune" init-method="init" destroy-method="destroy"
 		class="com.springdemo.beanScope.impl.GoodFortuenService">
 	</bean>
 
-	<bean id="myCoach"
-		class="com.springdemo.beanScope.impl.TrackCoach">
+	<bean id="myCoach" destroy-method="destroy"
+		class="com.springdemo.beanScope.impl.TrackCoach" scope="prototype">
 		<constructor-arg ref="fortune"></constructor-arg>
 	</bean>
 

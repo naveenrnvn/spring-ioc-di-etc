@@ -1,12 +1,17 @@
 package com.springdemo.beanScope.impl;
 
-import com.springdemo.beanScope.interfaces.Coach;
-import com.springdemo.beanScope.interfaces.FortuneService;
+import com.java.interfaces.Coach;
+import com.java.interfaces.FortuneService;
 
 public class TrackCoach implements Coach {
 
 	private FortuneService fortuen;
-
+	
+	
+    public void destroy() {
+    	System.out.println("destroy of TrackCoach");
+    }
+    
 	public TrackCoach(FortuneService fortuen) {
 		super();
 		this.fortuen = fortuen;

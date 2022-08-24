@@ -1,6 +1,6 @@
 package com.springdemo.beanScope.impl;
 
-import com.springdemo.beanScope.interfaces.FortuneService;
+import com.java.interfaces.FortuneService;
 
 public class BadFortuenService implements FortuneService {
 

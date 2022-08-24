@@ -1,12 +1,18 @@
 package com.springdemo.IOCandDI.impl;
 
-import com.springdemo.IOCandDI.interfaces.Coach;
+import com.java.interfaces.Coach;
 
 public class BaseballCoach implements Coach {
 	
 	@Override
-	public String getDailyWorkout() {
-		return "Spend 30 minutes on batting practice";
+	public void getDailyWorkout() {
+		System.out.println("run and pracktice 5 days a week");
+	}
+
+	@Override
+	public void printForturn() {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

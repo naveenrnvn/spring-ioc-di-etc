@@ -1,4 +1,4 @@
-package com.springdemo.beanScope.interfaces;
+package com.java.interfaces;
 
 public interface FortuneService {
 

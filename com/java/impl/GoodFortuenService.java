@@ -1,7 +1,11 @@
-package com.springdemo.beanScope.impl;
+package com.java.impl;
 
-import com.java.interfaces.FortuneService;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
 
+import com.java.interfaces.*;
+@Component()
+@Scope("singleton")
 public class GoodFortuenService implements FortuneService {
 
 	public void printFortune() {
@@ -16,6 +20,6 @@ public class GoodFortuenService implements FortuneService {
 	    }
 	
 	public GoodFortuenService() {
-		System.out.println("constructor of GoodFortuenService");
+		System.out.println("GoodFortuenService constructor");
 	}
 }
